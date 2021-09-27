@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS flaskapp;
+CREATE DATABASE flaskapp;
+
+USE flaskapp;
+
+CREATE TABLE users (
+   id INT NOT NULL AUTO_INCREMENT,
+   username VARCHAR(100) NOT NULL,
+   password VARCHAR(100) NOT NULL,
+   confirm VARCHAR(100) NOT NULL,
+   PRIMARY KEY (id)
+);
+
